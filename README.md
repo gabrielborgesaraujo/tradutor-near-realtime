@@ -19,17 +19,15 @@ Fale no microfone em qualquer um dos 17 idiomas suportados e ouça a tradução 
 
 ## 🌍 Idiomas Suportados
 
-| Código | Idioma       | Código | Idioma     |
-|--------|-------------|--------|------------|
-| `pt`   | Português   | `nl`   | Nederlands |
-| `en`   | English     | `cs`   | Čeština    |
-| `es`   | Español     | `ar`   | العربية    |
-| `fr`   | Français    | `zh-cn`| 中文       |
-| `de`   | Deutsch     | `ja`   | 日本語     |
-| `it`   | Italiano    | `hu`   | Magyar     |
-| `pl`   | Polski      | `ko`   | 한국어     |
-| `tr`   | Türkçe      | `hi`   | हिन्दी    |
-| `ru`   | Русский     |        |            |
+| Código | Idioma       
+|--------|-------------|
+| `pt`   | Português   | 
+| `en`   | English     | 
+| `es`   | Español     |
+| `fr`   | Français    |
+| `de`   | Deutsch     |
+| `it`   | Italiano    | 
+
 
 > Todos os pares de idiomas são suportados. Quando não existe um modelo direto, o sistema faz tradução via pivô pelo inglês automaticamente.
 
