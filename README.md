@@ -2,7 +2,7 @@
 
 **Tradutor de voz em tempo real com clonagem de voz, acelerado por GPU.**
 
-Fale no microfone em qualquer um dos 17 idiomas suportados e ouça a tradução instantânea — sintetizada com a **sua própria voz** — no idioma de destino.
+Fale no microfone em qualquer um dos 6 idiomas suportados e ouça a tradução instantânea — sintetizada com a **sua própria voz** — no idioma de destino.
 
 ---
 
@@ -10,7 +10,7 @@ Fale no microfone em qualquer um dos 17 idiomas suportados e ouça a tradução 
 
 - 🗣️ **Captura de voz em tempo real** com detecção automática de fala (VAD — Silero)
 - 🧠 **Transcrição de alta precisão** via Whisper `large-v3-turbo` (faster-whisper, GPU)
-- 🌐 **Tradução neural** entre 17 idiomas usando MarianMT (Helsinki-NLP), com roteamento automático de modelos e *pivot* via inglês quando necessário
+- 🌐 **Tradução neural** entre 6 idiomas usando MarianMT (Helsinki-NLP), com roteamento automático de modelos e *pivot* via inglês quando necessário
 - 🔊 **Síntese de voz (TTS)** com clonagem — sua voz é preservada no idioma de destino (Coqui XTTS v2)
 - 🖥️ **Interface gráfica moderna** em PyQt6 com tema escuro (Catppuccin)
 - ⚡ **Pipeline 100% na GPU** (CUDA) para latência mínima
@@ -51,6 +51,7 @@ Microfone → Silero VAD → Whisper STT → MarianMT → XTTS v2 TTS → Alto-f
 | **GPU** | NVIDIA com suporte a CUDA (recomendado: ≥ 8 GB VRAM) |
 | **Drivers NVIDIA** | Atualizados ([download](https://www.nvidia.com/drivers)) |
 | **FFmpeg** | Disponível no PATH |
+| **Amostra de voz** | Arquivo `.wav` com **10–30 segundos** da sua voz (fala contínua e clara, sem ruídos de fundo) |
 
 ---
 
@@ -106,7 +107,7 @@ python app.py
 1. Aguarde o carregamento dos modelos (barra de progresso na interface)
 2. Selecione os **idiomas** de origem e destino
 3. Escolha o **microfone** de entrada e o **dispositivo de saída** de áudio
-4. (Opcional) Selecione um arquivo `.wav` de referência para a clonagem de voz
+4. Selecione o arquivo `.wav` com a amostra da sua voz (10–30 s) para a clonagem de voz
 5. Clique em **▶ Iniciar** e comece a falar!
 
 > 💡 **Dica:** Na primeira execução, os modelos de IA serão baixados automaticamente (~4 GB). Isso é normal e só acontece uma vez.
