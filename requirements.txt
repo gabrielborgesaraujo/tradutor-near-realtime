@@ -1,0 +1,8 @@
+PyQt6
+sounddevice
+numpy
+torch
+faster-whisper
+transformers
+TTS
+sentencepiece
